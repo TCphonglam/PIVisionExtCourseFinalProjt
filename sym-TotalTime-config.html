@@ -1,0 +1,18 @@
+<ul kendo-panel-bar class="t-side-panel-bgcolor" style="font-size: 14px;"> 
+	<li class="k-state-active"> 
+		<span class="panel-bar-label-no-wrap">Symbol Configuration</span>
+		<div class="config-option-single-row" style="margin:10px 20px; font-size: 14px;"> 
+			<div class="config-option-ie11-overflow-fix"> 
+                <div class="config-label">Threshold</div>
+                <input type="number" step="0.01" style="width: 100px;height: 100%;float: right;margin-right: 25px;" ng-model="config.threshold">
+                <!-- Allow User to pick Symbol Color and background-->
+               <div style="width: 85%; margin: 10px 0 15px 20px;">
+                    <pv-color-picker colorkeyword="Background" ng-model="config.background"></pv-color-picker>
+                    <pv-color-picker colorkeyword="Text Color" ng-model="config.color"></pv-color-picker>
+					<pv-color-picker colorkeyword="Above Color" ng-model="config.chartConfig.dataProvider[1].color"></pv-color-picker>
+					<pv-color-picker colorkeyword="Below Color" ng-model="config.chartConfig.dataProvider[0].color"></pv-color-picker>
+                </div>
+			</div>
+        </div> 
+    </li>
+</ul>

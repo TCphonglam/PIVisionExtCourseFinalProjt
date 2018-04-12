@@ -1,0 +1,6 @@
+<div ng-style="{'background-color' : config.background, 'color' : config.color}" style="width: 100%;height: 100%;">
+	<h1>{{Label}}</h1>
+	<h2>Threshold : {{config.threshold}}</h2>
+	<h1 ng-show="NoData">Can not display data</h1>
+	<div ng-show="!NoData" id="chartdiv" style="width: 100%; height: 300px;"></div>
+</div>
